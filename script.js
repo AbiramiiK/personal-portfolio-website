@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // =========================
-  // Contact Form Validation
+  // Contact Form Validation & Submission
   // =========================
   const contactForm = document.getElementById("contactForm");
   const nameInput = document.getElementById("contactName");
@@ -165,8 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const messageError = document.getElementById("messageError");
   const formSuccess = document.getElementById("formSuccess");
 
-  const emailRegex =
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const clearErrors = () => {
     if (nameError) nameError.textContent = "";
@@ -185,6 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const name = nameInput?.value.trim() || "";
       const email = emailInput?.value.trim() || "";
+      // Inside your JavaScript file around line 186:
       const message = messageInput?.value.trim() || "";
 
       if (!name) {
@@ -202,8 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (!emailRegex.test(email)) {
         isValid = false;
         if (emailError) {
-          emailError.textContent =
-            "Please enter a valid email address.";
+          emailError.textContent = "Please enter a valid email address.";
         }
       }
 
@@ -215,18 +214,46 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (message.length < 10) {
         isValid = false;
         if (messageError) {
-          messageError.textContent =
-            "Message must be at least 10 characters long.";
+          messageError.textContent = "Message must be at least 10 characters long.";
         }
       }
 
+      // If validation passes, process the actual email transmission
       if (isValid) {
         if (formSuccess) {
-          formSuccess.textContent =
-            "Your message has been sent successfully!";
+          formSuccess.style.color = "unset"; // Resets to default color layout if changed
+          formSuccess.textContent = "Sending message...";
         }
 
-        contactForm.reset();
+        // Bundle form data for submission
+        const formData = new FormData(contactForm);
+
+        // CHANGE THIS to your actual email address
+        const targetEmail = "abiramikarthick2k7@gmail.com";
+
+        fetch(`https://formsubmit.co/ajax/${targetEmail}`, {
+          method: "POST",
+          body: formData
+        })
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error("Network response was not ok.");
+        })
+        .then(data => {
+          if (formSuccess) {
+            formSuccess.textContent = "Your message has been sent successfully!";
+          }
+          contactForm.reset();
+        })
+        .catch(error => {
+          console.error("Error submitting form:", error);
+          if (formSuccess) {
+            formSuccess.style.color = "red";
+            formSuccess.textContent = "Oops! Something went wrong. Please try again.";
+          }
+        });
       }
     });
   }

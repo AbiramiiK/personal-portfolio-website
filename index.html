@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abirami Karthick — Information Technology Student portfolio. Advanced CSS3 & Responsive Architecture." />
+  <title>Abirami Karthick · Information Technology Student</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Space Grotesk (display) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#hero" class="nav__logo" aria-label="Abirami Karthick — home">
+        <span class="nav__logo-bracket">&lt;</span>AK<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu" role="list">
+        <li><a href="#about"    class="nav__link" aria-label="About section">About</a></li>
+        <li><a href="#skills"   class="nav__link" aria-label="Skills section">Skills</a></li>
+        <li><a href="#projects" class="nav__link" aria-label="Projects section">Projects</a></li>
+        <li><a href="#contact"  class="nav__link" aria-label="Contact section">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+            <span class="theme-toggle__icon theme-toggle__sun" aria-hidden="true">☀️</span>
+            <span class="theme-toggle__icon theme-toggle__moon" aria-hidden="true">🌙</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero" aria-label="Hero introduction">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+      <div class="container hero__content">
+        <p class="hero__eyebrow reveal">Available for Internships · 2026</p>
+
+<h2 class="hero__title reveal">
+  ABIRAMI K<br />
+  <span class="hero__title-accent">Information Technology Student & Aspiring Full-Stack Developer</span>
+</h2>
+
+<p class="hero__description reveal">
+  Passionate Information Technology student from Chennai with interests in
+  Full-Stack Development, Prompt Engineering, Artificial Intelligence,
+  Web Development and Software Technologies. I enjoy building innovative
+  projects and continuously learning new skills.
+</p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact"  class="btn btn--ghost">Get in touch</a>
+        </div>
+
+        <div class="hero__stat">
+  <span class="hero__stat-value">1+</span>
+  <span class="hero__stat-label">Years Learning</span>
+</div>
+
+<div class="hero__stat">
+  <span class="hero__stat-value">2+</span>
+  <span class="hero__stat-label">Projects Completed</span>
+</div>
+
+<div class="hero__stat">
+  <span class="hero__stat-value">7+</span>
+  <span class="hero__stat-label">Certifications</span>
+</div>
+
+      <div class="hero__scroll-hint reveal" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="section__eyebrow reveal">Who I am</p>
+          <h2 class="section__title reveal" id="about-heading">
+  Learning, Building & Growing<br />Every Day
+</h2>
+
+<p class="about__body reveal">
+  Hi, I'm Abirami Karthick, an Information Technology student based in Chennai.
+  I am passionate about technology, software development and creating practical
+  solutions through programming.
+</p>
+
+<p class="about__body reveal">
+  My interests include Full-Stack Development, Prompt Engineering, Artificial
+  Intelligence and Web Development. I actively participate in internships,
+  workshops and projects to enhance my technical skills.
+</p>
+          <a href="#contact" class="btn btn--primary reveal">Let's collaborate →</a>
+        </div>
+
+        <div class="about__card-wrap reveal" aria-hidden="true">
+          <div class="about__card glass">
+            <div class="about__avatar" role="img" aria-label="Abirami Karthick avatar"></div>
+            <ul class="about__detail-list" role="list">
+              <li class="about__detail">
+                <span class="about__detail-label">Location</span>
+                <span class="about__detail-value">Chennai, India</span>
+              </li>
+              <li class="about__detail">
+                <span class="about__detail-label">Focus</span>
+                <span class="about__detail-value">Full-Stack Development, AI & Prompting</span>
+              </li>
+              <li class="about__detail">
+                <span class="about__detail-label">Education</span>
+                <span class="about__detail-value">B.Tech in Information Technology</span>
+              </li>
+              <li class="about__detail">
+                <span class="about__detail-label">Status</span>
+                <span class="about__detail-value available">✦ Open to internships</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="skills section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <p class="section__eyebrow reveal">What I use</p>
+        <h2 class="section__title reveal" id="skills-heading">Technical toolkit</h2>
+
+        <div class="skills__grid">
+
+          <article class="skill-card glass reveal" aria-label="Frontend skills">
+            <div class="skill-card__icon" aria-hidden="true">◈</div>
+            <h3 class="skill-card__title">Frontend</h3>
+            <ul class="skill-card__tags" role="list">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+<li class="tag">JavaScript</li>
+<li class="tag">Responsive Design</li>
+<li class="tag">Bootstrap</li>
+<li class="tag">React Basics</li>
+            </ul>
+            <div class="skill-card__bar-wrap" aria-label="Proficiency: 90%">
+              <div class="skill-card__bar" data-pct="90"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal" aria-label="Backend skills">
+            <div class="skill-card__icon" aria-hidden="true">⬡</div>
+            <h3 class="skill-card__title">Backend</h3>
+            <ul class="skill-card__tags" role="list">
+             <li class="tag">Python</li>
+<li class="tag">Java</li>
+<li class="tag">C Programming</li>
+<li class="tag">SQL</li>
+<li class="tag">Database Concepts</li>
+<li class="tag">API Basics</li>
+            </ul>
+            <div class="skill-card__bar-wrap" aria-label="Proficiency: 82%">
+              <div class="skill-card__bar" data-pct="82"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal" aria-label="DevOps skills">
+            <div class="skill-card__icon" aria-hidden="true">⬟</div>
+            <h3 class="skill-card__title">AI & Prompting</h3>
+            <ul class="skill-card__tags" role="list">
+             <li class="tag">Design &amp; Prompt Engineering</li>
+<li class="tag">ChatGPT</li>
+<li class="tag">Claude AI</li>
+<li class="tag">Generative AI</li>
+<li class="tag">Automation</li>
+<li class="tag">AI Tools</li>
+            </ul>
+            <div class="skill-card__bar-wrap" aria-label="Proficiency: 75%">
+              <div class="skill-card__bar" data-pct="75"></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass reveal" aria-label="Design tools">
+            <div class="skill-card__icon" aria-hidden="true">◇</div>
+            <h3 class="skill-card__title">Design &amp; Tools</h3>
+            <ul class="skill-card__tags" role="list">
+              <li class="tag">GitHub</li>
+<li class="tag">VS Code</li>
+<li class="tag">Canva</li>
+<li class="tag">Figma</li>
+<li class="tag">MS Office</li>
+<li class="tag">Google Workspace</li>
+            </ul>
+            <div class="skill-card__bar-wrap" aria-label="Proficiency: 78%">
+              <div class="skill-card__bar" data-pct="78"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section class="projects section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section__eyebrow reveal">What I've built</p>
+        <h2 class="section__title reveal" id="projects-heading">Selected projects</h2>
+
+        <div class="projects__grid">
+          <!-- Project 1 — Featured -->
+<article class="project-card project-card--featured glass reveal" aria-label="Personal Portfolio Website project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--1"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="tag tag--accent">Featured</span>
+      <span class="project-card__year">2026</span>
+    </div>
+    <h3 class="project-card__title">Personal Portfolio Website</h3>
+    <p class="project-card__desc">
+      Designed and developed a modern responsive portfolio website to showcase
+      my skills, projects, certifications, and achievements. Implemented
+      dark/light mode, smooth animations, responsive layouts, and contact form validation.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">HTML5</li>
+      <li class="tag">CSS3</li>
+      <li class="tag">JavaScript</li>
+      <li class="tag">Responsive Design</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/AbiramiiK/personal-portfolio-website"
+   class="btn btn--small btn--ghost"
+   target="_blank"
+   rel="noopener noreferrer">
+   GitHub ↗
+</a>
+      <a href="#" class="btn btn--small btn--primary">Live Demo ↗</a>
+    
+    </div>
+  </div>
+</article>
+
+<!-- Project 2 -->
+<article class="project-card glass reveal" aria-label="Simple Calculator project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--2"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">2025</span>
+    </div>
+    <h3 class="project-card__title">Voicecalc-Pro</h3>
+    <p class="project-card__desc">
+      Built VoiceCalc Pro, a responsive voice-controlled calculator with speech recognition, PDF export, dark/light themes, local storage, and cross-device compatibility using HTML, CSS, and JavaScript.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">HTML</li>
+      <li class="tag">CSS</li>
+      <li class="tag">JavaScript</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/AbiramiiK/Voicecalc-pro"
+   class="btn btn--small btn--ghost"
+   target="_blank"
+   rel="noopener noreferrer">
+   GitHub ↗
+</a>
+
+       <a href="https://abiramiik.github.io/voicecalc-pro/"
+   class="btn btn--small btn--primary"
+   target="_blank"
+   rel="noopener noreferrer">
+   Live Demo ↗
+</a>
+    
+    </div>
+  </div>
+</article>
+
+<!-- Project 3 -->
+<article class="project-card glass reveal" aria-label="Surplus Food Controller project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--3"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">2026</span>
+    </div>
+    <h3 class="project-card__title">Extra2Essential</h3>
+    <p class="project-card__desc">
+       Developed a food waste management solution that bridges 
+     the gap between food donors and recipients. 
+     The platform streamlines surplus food collection and distribution, 
+     promoting sustainability and social responsibility.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">Python</li>
+      <li class="tag">SQL</li>
+      <li class="tag">HTML</li>
+      <li class="tag">CSS</li>
+    </ul>
+    <div class="project-card__links">
+        <a href="https://github.com/AbiramiiK/E2E"
+   class="btn btn--small btn--ghost"
+   target="_blank"
+   rel="noopener noreferrer">
+   GitHub ↗
+</a>
+      <a href="https://abiramiik.github.io/E2E/"
+   class="btn btn--small btn--primary"
+   target="_blank"
+   rel="noopener noreferrer">
+   Live Demo ↗
+</a>    
+    
+    </div>
+  </div>
+</article>
+
+<!-- Project 4 -->
+<article class="project-card glass reveal" aria-label="Green Washing Detection project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--4"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">Ongoing</span>
+    </div>
+    <h3 class="project-card__title">Green Washing Detection System</h3>
+    <p class="project-card__desc">
+      Currently developing an AI-powered solution to identify misleading
+      environmental claims made by companies. The system analyzes product
+      descriptions and sustainability reports to improve transparency and
+      support eco-conscious decision making.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">Artificial Intelligence</li>
+      <li class="tag">Machine Learning</li>
+      <li class="tag">Python</li>
+      <li class="tag">Data Analysis</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="#" class="btn btn--small btn--primary">In Progress</a>
+      
+    </div>
+  </div>
+</article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact__grid">
+
+        <div class="contact__intro">
+          <p class="section__eyebrow reveal">Say hello</p>
+          <h2 class="section__title reveal" id="contact-heading">
+            Let's build something<br />great together.
+          </h2>
+          <p class="contact__body reveal">
+            Whether it's a freelance project, a full-time role, or just a chat
+            about tech — my inbox is always open.
+          </p>
+          <ul class="contact__links reveal" role="list">
+            <li>
+              <a href="mailto:abiramikarthick2k7@gmail.com" class="contact__social-link" aria-label="Email Abirami Karthick">
+                <span class="contact__social-icon" aria-hidden="true">✉</span>
+                abiramikarthick2k7@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/AbiramiiK"
+     class="contact__social-link"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Abirami Karthick on GitHub">
+    <span class="contact__social-icon" aria-hidden="true">⌥</span>
+    github.com/AbiramiiK
+  </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/abirami-k2007"
+     class="contact__social-link"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Abirami Karthick on LinkedIn">
+    <span class="contact__social-icon" aria-hidden="true">⬡</span>
+    linkedin.com/in/abirami-k2007
+  </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form glass reveal" id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label class="form-label" for="contactName">Name</label>
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              class="form-input"
+              placeholder="Your name"
+              autocomplete="name"
+              aria-required="true"
+            />
+            <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              class="form-input"
+              placeholder="your@email.com"
+              autocomplete="email"
+              aria-required="true"
+            />
+            <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Message</label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              class="form-input form-textarea"
+              placeholder="Tell me about your project…"
+              rows="5"
+              aria-required="true"
+            ></textarea>
+            <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="formSubmit">
+            Send message →
+          </button>
+          <p class="form-success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container site-footer__inner">
+      <p class="site-footer__copy">
+  © 2026 Abirami Karthick. Designed & Built by Me.
+</p>
+      <p class="site-footer__made">
+        <span aria-hidden="true">⚡</span> Advanced CSS3 &amp; Responsive Architecture
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top" hidden>
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+  <meta name="description"
+content="Abirami K- Information Technology Student Portfolio, Full Stack Development, Prompt Engineering and AI Enthusiast." />
+</body>
+</html>

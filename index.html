@@ -27,10 +27,12 @@
       </button>
 
       <ul class="nav__menu" id="navMenu" role="list">
-        <li><a href="#about"    class="nav__link" aria-label="About section">About</a></li>
-        <li><a href="#skills"   class="nav__link" aria-label="Skills section">Skills</a></li>
-        <li><a href="#projects" class="nav__link" aria-label="Projects section">Projects</a></li>
-        <li><a href="#contact"  class="nav__link" aria-label="Contact section">Contact</a></li>
+        <li><a href="#about"      class="nav__link" aria-label="About section">About</a></li>
+        <li><a href="#skills"     class="nav__link" aria-label="Skills section">Skills</a></li>
+        <li><a href="#projects"   class="nav__link" aria-label="Projects section">Projects</a></li>
+        <li><a href="#prototypes" class="nav__link" aria-label="Prototypes section">Prototypes</a></li>
+        <li><a href="#resume"     class="nav__link" aria-label="Resume section">Resume</a></li>
+        <li><a href="#contact"    class="nav__link" aria-label="Contact section">Contact</a></li>
         <li>
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
             <span class="theme-toggle__icon theme-toggle__sun" aria-hidden="true">☀️</span>
@@ -74,7 +76,7 @@
 </div>
 
 <div class="hero__stat">
-  <span class="hero__stat-value">2+</span>
+  <span class="hero__stat-value">4+</span>
   <span class="hero__stat-label">Projects Completed</span>
 </div>
 
@@ -214,15 +216,17 @@
       </div>
     </section>
 
-    <!-- ========== PROJECTS ========== -->
+    <!-- ========== MAJOR PROJECTS ========== -->
     <section class="projects section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
         <p class="section__eyebrow reveal">What I've built</p>
-        <h2 class="section__title reveal" id="projects-heading">Selected projects</h2>
+        <h2 class="section__title reveal" id="projects-heading">Major Projects</h2>
+        <p class="section__subtitle reveal">Applications solving real-world problems.</p>
 
         <div class="projects__grid">
-          <!-- Project 1 — Featured -->
-<article class="project-card project-card--featured glass reveal" aria-label="Personal Portfolio Website project">
+
+          <!-- SkillSwap AI — Featured -->
+<article class="project-card project-card--featured glass reveal" aria-label="SkillSwap AI project">
   <div class="project-card__media" aria-hidden="true">
     <div class="project-card__preview project-card__preview--1"></div>
   </div>
@@ -231,69 +235,74 @@
       <span class="tag tag--accent">Featured</span>
       <span class="project-card__year">2026</span>
     </div>
-    <h3 class="project-card__title">Personal Portfolio Website</h3>
+    <h3 class="project-card__title">SkillSwap AI</h3>
     <p class="project-card__desc">
-      Designed and developed a modern responsive portfolio website to showcase
-      my skills, projects, certifications, and achievements. Implemented
-      dark/light mode, smooth animations, responsive layouts, and contact form validation.
+      AI-powered peer learning platform where students exchange skills instead of paying for courses.
+      Features AI-based matching, skill verification, chat, dashboards, and learning progress tracking.
     </p>
     <ul class="project-card__stack" role="list" aria-label="Technologies used">
-      <li class="tag">HTML5</li>
-      <li class="tag">CSS3</li>
-      <li class="tag">JavaScript</li>
-      <li class="tag">Responsive Design</li>
+      <li class="tag">React</li>
+      <li class="tag">Node.js</li>
+      <li class="tag">Express</li>
+      <li class="tag">MongoDB</li>
+      <li class="tag">AI</li>
+      <li class="tag">JWT</li>
     </ul>
     <div class="project-card__links">
-      <a href="https://github.com/AbiramiiK/personal-portfolio-website"
-   class="btn btn--small btn--ghost"
-   target="_blank"
-   rel="noopener noreferrer">
-   GitHub ↗
-</a>
-      <a href="#" class="btn btn--small btn--primary">Live Demo ↗</a>
-    
+      <a href="https://github.com/AbiramiiK"
+         class="btn btn--small btn--ghost"
+         target="_blank"
+         rel="noopener noreferrer">
+         GitHub ↗
+      </a>
+      <a href="#"
+         class="btn btn--small btn--primary"
+         target="_blank"
+         rel="noopener noreferrer">
+         Live Demo ↗
+      </a>
     </div>
   </div>
 </article>
 
-<!-- Project 2 -->
-<article class="project-card glass reveal" aria-label="Simple Calculator project">
+<!-- AI Interview Mock -->
+<article class="project-card glass reveal" aria-label="AI Interview Mock project">
   <div class="project-card__media" aria-hidden="true">
     <div class="project-card__preview project-card__preview--2"></div>
   </div>
   <div class="project-card__body">
     <div class="project-card__meta">
-      <span class="project-card__year">2025</span>
+      <span class="project-card__year">2026</span>
     </div>
-    <h3 class="project-card__title">Voicecalc-Pro</h3>
+    <h3 class="project-card__title">AI Interview Mock</h3>
     <p class="project-card__desc">
-      Built VoiceCalc Pro, a responsive voice-controlled calculator with speech recognition, PDF export, dark/light themes, local storage, and cross-device compatibility using HTML, CSS, and JavaScript.
+      AI-powered interview preparation platform that generates interview questions, evaluates answers,
+      provides instant feedback, and tracks improvement.
     </p>
     <ul class="project-card__stack" role="list" aria-label="Technologies used">
-      <li class="tag">HTML</li>
-      <li class="tag">CSS</li>
-      <li class="tag">JavaScript</li>
+      <li class="tag">React</li>
+      <li class="tag">Node.js</li>
+      <li class="tag">OpenAI API</li>
+      <li class="tag">MongoDB</li>
     </ul>
     <div class="project-card__links">
-      <a href="https://github.com/AbiramiiK/Voicecalc-pro"
-   class="btn btn--small btn--ghost"
-   target="_blank"
-   rel="noopener noreferrer">
-   GitHub ↗
-</a>
-
-       <a href="https://abiramiik.github.io/voicecalc-pro/"
-   class="btn btn--small btn--primary"
-   target="_blank"
-   rel="noopener noreferrer">
-   Live Demo ↗
-</a>
-    
+      <a href="https://github.com/AbiramiiK"
+         class="btn btn--small btn--ghost"
+         target="_blank"
+         rel="noopener noreferrer">
+         GitHub ↗
+      </a>
+      <a href="#"
+         class="btn btn--small btn--primary"
+         target="_blank"
+         rel="noopener noreferrer">
+         Live Demo ↗
+      </a>
     </div>
   </div>
 </article>
 
-<!-- Project 3 -->
+<!-- Extra2Essential (E2E) -->
 <article class="project-card glass reveal" aria-label="Surplus Food Controller project">
   <div class="project-card__media" aria-hidden="true">
     <div class="project-card__preview project-card__preview--3"></div>
@@ -328,18 +337,18 @@
    rel="noopener noreferrer">
    Live Demo ↗
 </a>    
-    
     </div>
   </div>
 </article>
 
-<!-- Project 4 -->
+<!-- Green Washing Detection System -->
 <article class="project-card glass reveal" aria-label="Green Washing Detection project">
   <div class="project-card__media" aria-hidden="true">
     <div class="project-card__preview project-card__preview--4"></div>
   </div>
   <div class="project-card__body">
     <div class="project-card__meta">
+      <span class="tag tag--accent">In Progress</span>
       <span class="project-card__year">Ongoing</span>
     </div>
     <h3 class="project-card__title">Green Washing Detection System</h3>
@@ -357,10 +366,203 @@
     </ul>
     <div class="project-card__links">
       <a href="#" class="btn btn--small btn--primary">In Progress</a>
-      
     </div>
   </div>
 </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOTYPES ========== -->
+    <section class="projects section" id="prototypes" aria-labelledby="prototypes-heading">
+      <div class="container">
+        <p class="section__eyebrow reveal">Experiments & Learning</p>
+        <h2 class="section__title reveal" id="prototypes-heading">Prototypes</h2>
+        <p class="section__subtitle reveal">Frontend prototypes and learning projects.</p>
+
+        <div class="projects__grid">
+
+          <!-- Personal Portfolio Website -->
+<article class="project-card glass reveal" aria-label="Personal Portfolio Website project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--1"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">2026</span>
+    </div>
+    <h3 class="project-card__title">Personal Portfolio Website</h3>
+    <p class="project-card__desc">
+      Designed and developed a modern responsive portfolio website to showcase
+      my skills, projects, certifications, and achievements. Implemented
+      dark/light mode, smooth animations, responsive layouts, and contact form validation.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">HTML5</li>
+      <li class="tag">CSS3</li>
+      <li class="tag">JavaScript</li>
+      <li class="tag">Responsive Design</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/AbiramiiK/personal-portfolio-website"
+   class="btn btn--small btn--ghost"
+   target="_blank"
+   rel="noopener noreferrer">
+   GitHub ↗
+</a>
+      <a href="#" class="btn btn--small btn--primary">Live Demo ↗</a>
+    </div>
+  </div>
+</article>
+
+<!-- VoiceCalc Pro -->
+<article class="project-card glass reveal" aria-label="Simple Calculator project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--2"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">2025</span>
+    </div>
+    <h3 class="project-card__title">Voicecalc-Pro</h3>
+    <p class="project-card__desc">
+      Built VoiceCalc Pro, a responsive voice-controlled calculator with speech recognition, PDF export, dark/light themes, local storage, and cross-device compatibility using HTML, CSS, and JavaScript.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">HTML</li>
+      <li class="tag">CSS</li>
+      <li class="tag">JavaScript</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/AbiramiiK/Voicecalc-pro"
+   class="btn btn--small btn--ghost"
+   target="_blank"
+   rel="noopener noreferrer">
+   GitHub ↗
+</a>
+
+       <a href="https://abiramiik.github.io/voicecalc-pro/"
+   class="btn btn--small btn--primary"
+   target="_blank"
+   rel="noopener noreferrer">
+   Live Demo ↗
+</a>
+    </div>
+  </div>
+</article>
+
+<!-- Weather Dashboard -->
+<article class="project-card glass reveal" aria-label="Weather Dashboard project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--3"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">2025</span>
+    </div>
+    <h3 class="project-card__title">Weather Dashboard</h3>
+    <p class="project-card__desc">
+      Responsive weather application using OpenWeather API displaying live weather, forecasts,
+      humidity, wind speed, and temperature with a clean UI.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">HTML</li>
+      <li class="tag">CSS</li>
+      <li class="tag">JavaScript</li>
+      <li class="tag">API</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/AbiramiiK"
+         class="btn btn--small btn--ghost"
+         target="_blank"
+         rel="noopener noreferrer">
+         GitHub ↗
+      </a>
+      <a href="#"
+         class="btn btn--small btn--primary"
+         target="_blank"
+         rel="noopener noreferrer">
+         Live Demo ↗
+      </a>
+    </div>
+  </div>
+</article>
+
+<!-- To-Do Application -->
+<article class="project-card glass reveal" aria-label="To-Do Application project">
+  <div class="project-card__media" aria-hidden="true">
+    <div class="project-card__preview project-card__preview--4"></div>
+  </div>
+  <div class="project-card__body">
+    <div class="project-card__meta">
+      <span class="project-card__year">2025</span>
+    </div>
+    <h3 class="project-card__title">To-Do Application</h3>
+    <p class="project-card__desc">
+      Task management application supporting task creation, editing, deletion, completion tracking,
+      filtering, and local storage persistence.
+    </p>
+    <ul class="project-card__stack" role="list" aria-label="Technologies used">
+      <li class="tag">HTML</li>
+      <li class="tag">CSS</li>
+      <li class="tag">JavaScript</li>
+    </ul>
+    <div class="project-card__links">
+      <a href="https://github.com/AbiramiiK"
+         class="btn btn--small btn--ghost"
+         target="_blank"
+         rel="noopener noreferrer">
+         GitHub ↗
+      </a>
+      <a href="#"
+         class="btn btn--small btn--primary"
+         target="_blank"
+         rel="noopener noreferrer">
+         Live Demo ↗
+      </a>
+    </div>
+  </div>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESUME ========== -->
+    <section class="projects section" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <p class="section__eyebrow reveal">My CV</p>
+        <h2 class="section__title reveal" id="resume-heading">Resume</h2>
+        <p class="section__subtitle reveal">Download or view my latest resume.</p>
+
+        <div class="projects__grid">
+
+          <article class="project-card glass reveal" aria-label="Resume download">
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span class="project-card__year">2026</span>
+              </div>
+              <h3 class="project-card__title">Abirami Karthick Resume</h3>
+              <p class="project-card__desc">
+                Download or preview my latest resume.
+              </p>
+              <div class="project-card__links">
+                <a href="assets/resume/Abirami_Karthick_Resume.pdf"
+                   class="btn btn--small btn--ghost"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   View Resume ↗
+                </a>
+                <a href="assets/resume/Abirami_Karthick_Resume.pdf"
+                   class="btn btn--small btn--primary"
+                   download>
+                   Download Resume ↓
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
